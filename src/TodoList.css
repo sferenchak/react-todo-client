@@ -1,0 +1,72 @@
+header {
+	text-align: center;
+}
+header h1 {
+	font-size: 64px;
+	font-weight: 300;
+	margin: 80px 0 25px;
+	color: #2c3e50;
+}
+header h1 span {
+	font-weight: 700;
+}
+header h2 {
+	color: #212629;
+	font-weight: 300;
+}
+
+/* TODO ITEM STYLES */
+.list {
+	width: 800px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+.task {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 20px;
+	color: #34495e;
+	transition: all 0.3s ease;
+	position: relative;
+	padding-right: calc(1em + 20px);
+	margin: 0.5em 0;
+}
+.task:hover {
+	background: rgba(0, 0, 0, 0.02);
+	cursor: pointer;
+}
+
+.task:hover .delete {
+	opacity: 1;
+}
+
+.done {
+	text-decoration: line-through;
+	color: #bdc3c7;
+}
+
+li .delete {
+	color: #c0392b;
+	transition: all 0.3s;
+	opacity: 0;
+	padding: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+}
+
+li .delete:hover {
+	color: #fff;
+	background-color: #c0392b;
+}
+
+@media (max-width: 800px) {
+	.list {
+		width: 100%;
+	}
+	li .delete {
+		opacity: 1;
+	}
+}
